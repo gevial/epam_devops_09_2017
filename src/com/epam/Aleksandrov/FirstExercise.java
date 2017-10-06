@@ -10,8 +10,8 @@ public class FirstExercise {
             avgLen = 0;
         } else {
             float totalLen = 0;
-            for (int i = 0; i < args.length; i++) {
-                totalLen += args[i].length();
+            for (String arg: args) {
+                totalLen += arg.length();
             }
             avgLen = totalLen / args.length;
         }
